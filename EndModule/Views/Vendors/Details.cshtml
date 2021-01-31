@@ -1,0 +1,22 @@
+﻿@using BOL;
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details of the Vendor</h2>
+
+<hr />
+@{
+    Vendor theVendor = Model as Vendor;
+
+   // <img src="@theProduct.ImageUrl" width="100" height="100" />
+
+    <p>Id : @theVendor.ID</p>
+    <p>Vendor Name : @theVendor.VName</p>
+    <p>Email - ID : @theVendor.EmailId</p>
+    <p>Address : @theVendor.Address</p>
+  //  <p>Quantity: @theProduct.Quantity</p>
+
+  //  <a href="/shoppingcart/addtocart/@theProduct.ID">Add to Cart</a>
+}
+

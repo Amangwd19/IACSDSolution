@@ -1,0 +1,21 @@
+﻿@using BOL
+@{
+    ViewBag.Title = "AddToCart";
+}
+
+<h2>Shopping cart</h2>
+<h2>AddToCart</h2>
+
+@{ 
+    Product theProductInterested = (Product)Model;
+    <p>Product ID=@theProductInterested.Title</p>
+    <hr/>
+
+    <form method="post">
+
+        <input type="text" name="id" value="@theProductInterested.ID" />
+        <input type="text" name="id" value="@theProductInterested.Title" />
+        <input type="text" name="quantity" />
+        <button type="submit" >Add to Cart</button>
+    </form>
+}

@@ -1,0 +1,14 @@
+<p>flowers-list works!</p>
+<p>flowers available</p>
+<div *ngFor="let flower of flowers">
+    <app-flower-details [id]="flower.id"
+                        [title]="flower.title"
+                        [description]="flower.description"
+                        [unitPrice]="flower.unitPrice"
+                        [quantity]="flower.quantity"
+                        [likes]="flower.likes"
+                        [imageUrl]="flower.imageUrl"
+                        [comment]="flower.comment">
+    </app-flower-details>
+</div>
+    

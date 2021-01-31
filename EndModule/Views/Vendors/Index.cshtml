@@ -1,0 +1,25 @@
+﻿@using BOL;
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Dotnet end module</h2>
+
+<h2>Details Of All Vendor</h2>
+
+<hr />
+<ol>
+    @{
+        //@flower.Title
+        List<Vendor> vendors = (List<Vendor>)this.ViewData["vendors"];
+        foreach (Vendor vendor in vendors)
+        {
+            <li>
+
+
+                <a href="/vendors/Details/@vendor.ID">@vendor.VName</a>
+            </li>
+        }
+    }
+
+</ol>

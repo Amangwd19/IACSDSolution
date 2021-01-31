@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>IACSD Online Shopping Portal</h2>
+<p>Today : @ViewBag.today</p>
+<p>Message : @ViewBag.message</p>
+<hr />
+<a href="/home/index">Home</a>|<a href="/home/aboutus">About Us</a>|<a href="/home/contact">Contact</a>
+
+@{
+    int count = 45;
+    for (int i = 0; i < 9; i++)
+    {
+        count = count + 1;
+    }
+    <p>count=@count</p>
+}
+
+
+
+  
+   
+
+ 
+
+

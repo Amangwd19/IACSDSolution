@@ -1,0 +1,22 @@
+<p>flower-details works!</p>
+<h3>Flower Details</h3>
+<hr/>
+<p>ID: {{id}}</p>
+<img src="{{imageUrl}}" width="100" height="100"/>
+<p><b>Title: {{title}}</b></p>
+<p>Description: <i><u>{{description}}</u></i> </p>
+<p>Unit Price: {{unitPrice| currency:"INR"}}</p>
+<p>Quantity:{{quantity}}</p>
+
+<p>Likes: {{likes}}</p>
+
+
+<!--
+<button (click)="unlike()">-</button> <input type="text" [(ngModel)]="likes"/><button (click)="like()">+</button>
+-->
+
+<app-counter [count]="likes"
+             (update)="onCounterUpdate($event)">
+</app-counter>
+
+<p>Comments: </p> <input type="text" [(ngModel)]="comment"/>

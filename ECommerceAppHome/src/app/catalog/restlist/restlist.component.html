@@ -1,0 +1,10 @@
+<p>restlist works!</p>
+
+<h2> Flowers List</h2>
+
+{{data|json}}
+<ol>
+    <li *ngFor="let flower of data">
+        {{flower.Title}}
+    </li>
+</ol>

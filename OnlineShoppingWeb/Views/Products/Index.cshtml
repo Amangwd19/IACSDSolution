@@ -1,0 +1,23 @@
+﻿@using BOL
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Flowers available for Sale</h2>
+
+<hr/>
+<ol>
+    @{
+        //@flower.Title
+        List<Product> flowers = (List<Product>)this.ViewData["products"];
+        foreach (Product flower in flowers)
+        {
+            <li>
+
+
+                <a href="/products/Details/@flower.ID">@flower.Title</a>
+            </li>
+        }
+    }
+
+</ol>

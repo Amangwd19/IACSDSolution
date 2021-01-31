@@ -1,0 +1,13 @@
+<p>list works!</p>
+<p>Flower Available</p>
+<hr/>
+<ul *ngFor="let flower of flowers">
+    <li>
+         <div><img src="/assets/images/Transflower.jpg" width="50" height="50" /> {{flower.unitPrice |currency:"INR"}}
+    <br/>
+    <button (click)="goToProduct(flower.id)">{{flower.title}}</button>
+    </div>
+</li>
+</ul>
+
+ 
